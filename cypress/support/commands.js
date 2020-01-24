@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+import 'cypress-shadow-dom';
+
+Cypress.Commands.overwrite('shadowClick', (originalFn, subject, options) => {
+	Cypress.log({
+		name: 'shadowClick',
+	});
+
+	subject.click();
+});
