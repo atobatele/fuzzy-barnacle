@@ -1,4 +1,4 @@
-context('Actions', () => {
+context('Login Tests', () => {
   beforeEach(() => {
     cy.visit('/')
   })
@@ -11,5 +11,5 @@ context('Actions', () => {
 
   })
 
- 
+
 })
